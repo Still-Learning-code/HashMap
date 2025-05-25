@@ -1,0 +1,44 @@
+fun main(args: Array<String>) {
+    var hashMap : HashMap<String, Int> = HashMap<String,Int>()
+
+    //printHashMap(hashMap)
+
+    //use .put() add elements
+
+    hashMap.put("Baseball",2000)
+    hashMap.put("Football",3000)
+    hashMap.put("Baseball",1000)
+    hashMap.put("Soccer",1500)
+    hashMap.put("Futbol",3500)
+
+   // printHashMap(hashMap)
+    println("hashMap : " + hashMap + "\n")
+
+    //traverse hashMap with for loop
+    for (key in hashMap.keys) {
+        println("Element at key $key : ${hashMap[key]}")
+    }
+//2nd hashMap object
+    var secondHashMap : HashMap<String, Int> = HashMap<String,Int>(hashMap)
+    println("\n" + "Second HashMap : ")
+    for (key in secondHashMap.keys) {
+        println("Element at key $key : ${secondHashMap.get(key)}")
+
+        //clear whole map
+        println("hashMap.clear()")
+        hashMap.clear()
+        println("After clearing: " + hashMap)
+
+    }
+    //function to print hM
+    fun printHashMap (hashMap:HashMap<String,Int>){
+        if(hashMap.isEmpty()){
+            println("hashMap is empty")
+        }else{
+            println("hashMap: " + hashMap)
+        }
+
+    }
+    
+
+}
