@@ -5,7 +5,7 @@ fun main(args: Array<String>) {
 
     //use .put() add elements
 
-    hashMap.put("Baseball",2000)
+    hashMap.put("Basketball",2000)
     hashMap.put("Football",3000)
     hashMap.put("Baseball",1000)
     hashMap.put("Soccer",1500)
